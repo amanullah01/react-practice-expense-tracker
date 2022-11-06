@@ -14,7 +14,7 @@ const App = () => {
 
   const onAddExpenseHandler = (expense) => {
     setExpenses((prevExpenses) => {
-      return [expense, ...expenses];
+      return [expense, ...prevExpenses];
     });
   };
 
